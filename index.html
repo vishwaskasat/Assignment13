@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thought Bubble</title>
+	<style>
+		p.thought{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			border: 1px solid;
+			background-color: #11F1FF;
+			line-height: 100px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+			}
+
+		p.thought:before{
+			content: ' ';
+			position: absolute;
+			width: 0;
+			height: 0;
+			right: 30px;
+			top: 100px;
+			border: 1px solid;
+			background-color: #11F1FF;
+		}
+
+		p.thought:after{
+			  content: ' ';
+			  position: absolute;
+			  width: 0;
+			  height: 0;
+			  right: 38px;
+			  top: 100px;
+			  border: 17px solid;
+			  border-color: #11F1FF transparent transparent #11F1FF;
+		}
+	</style>
+</head>
+<body>
+<p class="thought">Write this</p>
+</body>
+</html>
